@@ -32299,7 +32299,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 6570
+  m_ColorTemperature: 4371
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -58553,6 +58553,34 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6185779542002505596, guid: 11ee164ecf6c3df44bc334194f400918, type: 3}
       propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420202781215432129, guid: 11ee164ecf6c3df44bc334194f400918, type: 3}
+      propertyPath: m_Effectors.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420202781215432129, guid: 11ee164ecf6c3df44bc334194f400918, type: 3}
+      propertyPath: m_Effectors.Array.data[0].m_Visible
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420202781215432129, guid: 11ee164ecf6c3df44bc334194f400918, type: 3}
+      propertyPath: m_Effectors.Array.data[0].m_Transform
+      value: 
+      objectReference: {fileID: 201067265}
+    - target: {fileID: 6420202781215432129, guid: 11ee164ecf6c3df44bc334194f400918, type: 3}
+      propertyPath: m_Effectors.Array.data[0].m_Style.size
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420202781215432129, guid: 11ee164ecf6c3df44bc334194f400918, type: 3}
+      propertyPath: m_Effectors.Array.data[0].m_Style.shape
+      value: 
+      objectReference: {fileID: 4300000, guid: c6793350c150f456688e39a81f97364a, type: 2}
+    - target: {fileID: 6420202781215432129, guid: 11ee164ecf6c3df44bc334194f400918, type: 3}
+      propertyPath: m_Effectors.Array.data[0].m_Style.color.a
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6420202781215432129, guid: 11ee164ecf6c3df44bc334194f400918, type: 3}
+      propertyPath: m_Effectors.Array.data[0].m_Style.color.r
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6814963374011469254, guid: 11ee164ecf6c3df44bc334194f400918, type: 3}
