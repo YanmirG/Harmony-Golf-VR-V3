@@ -1,0 +1,1 @@
+This folder will contain all the RPM character's Mesh Data

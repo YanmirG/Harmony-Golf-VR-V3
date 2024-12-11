@@ -1,0 +1,408 @@
+.root {
+    flex-grow: 1;
+    background-color: rgb(243, 244, 246);
+}
+
+.container {
+    flex-grow: 1;
+    padding: 24px;
+    overflow: hidden;
+}
+
+.sidebar {
+    width: 260px;
+    background-color: rgb(9, 97, 72);
+    padding: 24px;
+    overflow: scroll;
+}
+
+.sidebar-link {
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    background-color: rgb(45, 106, 79);
+    color: rgb(209, 250, 229);
+    font-size: 14px;
+    border-width: 0;
+    -unity-text-align: middle-left;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.usage-value {
+    font-size: 12px;
+    color: rgb(100, 100, 100);
+}
+
+.usage-bar {
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+.usage-bar .unity-progress-bar__background {
+    background-color: rgb(229, 231, 235);
+    border-radius: 6px;
+}
+
+.usage-bar .unity-progress-bar__container {
+    background-color: rgb(229, 231, 235);
+    border-radius: 6px;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.usage-bar .unity-progress-bar__progress {
+    background-color: rgb(59, 130, 246);
+    border-radius: 3px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.sidebar-link:hover {
+    background-color: rgb(64, 145, 108);
+}
+
+.sidebar-link--active {
+    background-color: rgb(82, 183, 136);
+    color: white;
+    -unity-font-style: bold;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    padding: 10px 14px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    font-size: 14px;
+    -unity-text-align: middle-left;
+    flex-shrink: 0;
+    flex-grow: 0;
+}
+
+.section-card {
+    display: none;
+    border-width: 1px;
+    border-color: rgba(0, 0, 0, 0.1);
+    background-color: rgb(243, 244, 246);
+    border-radius: 6px;
+    padding: 24px;
+    flex-grow: 1;
+}
+
+.section-card.active {
+    display: flex;
+    flex-direction: column;
+}
+
+.card {
+    background-color: white;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 16px;
+    border-width: 1px;
+    border-color: rgb(229, 231, 235);
+}
+
+.header {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: rgb(31, 41, 55);
+    margin-bottom: 16px;
+}
+
+.label {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: rgb(45, 106, 79);
+    margin-bottom: 8px;
+}
+
+.unity-text-field #unity-text-input {
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-color: rgb(209, 213, 219);
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 15px;
+    color: rgb(51, 51, 51);
+}
+
+.unity-text-field #unity-text-input:hover {
+    border-color: rgb(156, 163, 175);
+}
+
+.unity-text-field #unity-text-input:focus {
+    border-color: rgb(9, 94, 56);
+}
+
+.textarea {
+    min-height: 120px;
+}
+
+.dropdown-field {
+    background-color: rgb(255, 255, 255);
+    border-width: 2px;
+    border-color: rgb(209, 213, 219);
+    border-radius: 6px;
+    padding: 10px 14px;
+    font-size: 15px;
+    color: rgb(31, 41, 55);
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.button-small {
+    background-color: rgb(10, 96, 73);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    -unity-font-style: bold;
+    border-width: 0;
+}
+
+.button-small:hover {
+    background-color: rgb(64, 145, 108);
+}
+
+.button-small:active {
+    background-color: rgb(45, 106, 79);
+}
+
+.link-button:hover {
+    color: rgb(64, 145, 108);
+}
+
+.mb-4 {
+    margin-bottom: 16px;
+    color: rgb(58, 84, 78);
+}
+
+.subheader {
+    -unity-font-style: bold;
+    font-size: 18px;
+    border-width: 0 0 2px 0;
+    border-color: rgb(209, 213, 219);
+    color: rgb(131, 171, 161);
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+}
+
+.mb-2 {
+    color: rgb(67, 67, 67);
+}
+
+.helper-text {
+    font-size: 14px;
+    color: rgb(107, 114, 128);
+    margin-top: 4px;
+}
+
+.info-group {
+    margin-bottom: 16px;
+}
+
+.value-text {
+    font-size: 16px;
+    color: rgb(31, 41, 55);
+}
+
+.status-active {
+    color: rgb(16, 185, 129);
+    -unity-font-style: bold;
+}
+
+.link-button {
+    color: rgb(10, 96, 73);
+    padding: 8px 0;
+    font-size: 16px;
+    border-width: 0;
+    -unity-text-align: middle-left;
+}
+
+.bullet-link {
+    color: rgb(10, 96, 73);
+    margin-left: 20px;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.bullet-link:hover {
+    color: rgb(64, 145, 108);
+}
+
+.unity-text-field {
+}
+
+.unity-toggle .unity-label {
+    color: rgb(20, 66, 47);
+}
+
+.logger-table-row {
+    color: rgb(20, 66, 47);
+    background-color: rgba(0, 0, 0, 0);
+    flex-direction: row;
+    justify-content: space-between;
+    border-left-color: rgb(0, 0, 0);
+    border-right-color: rgb(0, 0, 0);
+    border-top-color: rgb(0, 0, 0);
+    border-bottom-color: rgb(0, 0, 0);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 0;
+    padding: 5px;
+    -unity-text-align: middle-left;
+    border-radius: 0;
+}
+
+.logger-table-row-first {
+    border-radius: 4px 4px 0 0;
+}
+
+.logger-table-row-last {
+    border-radius: 0 0 4px 4px;
+    border-bottom-width: 1px;
+}
+
+.logger-table-element {
+    width: 14.28%;
+    margin: 0;
+}
+
+.changelog-entry {
+    margin-bottom: 20px;
+}
+
+.changelog-version {
+    font-size: 18px;
+    -unity-font-style: bold;
+    color: rgb(76, 175, 80);
+    margin-bottom: 5px;
+}
+
+.changelog-date {
+    font-size: 14px;
+    color: rgb(136, 136, 136);
+    margin-bottom: 10px;
+}
+
+.changelog-section {
+    font-size: 16px;
+    -unity-font-style: bold;
+    color: rgb(33, 150, 243);
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.changelog-item {
+    font-size: 14px;
+    color: rgb(51, 51, 51);
+    margin-left: 15px;
+    margin-bottom: 3px;
+}
+
+.container {
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+}
+
+.subheader {
+    font-size: 24px;
+    -unity-font-style: bold;
+    color: rgb(51, 51, 51);
+    margin-bottom: 15px;
+}
+
+.changelog {
+}
+
+.ltm-item {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    height: auto;
+    border-left-color: rgba(0, 0, 0, 0.16);
+    border-right-color: rgba(0, 0, 0, 0.16);
+    border-top-color: rgba(0, 0, 0, 0.16);
+    border-bottom-color: rgba(0, 0, 0, 0.16);
+    border-left-width: 2px;
+    border-right-width: 2px;
+    border-top-width: 2px;
+    border-bottom-width: 2px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    flex-direction: row;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-bottom: 8px;
+}
+
+.ltm-information {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    justify-content: center;
+    border-top-width: 4px;
+}
+
+.ltm-label {
+    flex-grow: 0;
+    -unity-text-align: middle-left;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+
+.ltm-button-container {
+    flex-grow: 1;
+    background-color: rgba(0, 0, 0, 0);
+    align-self: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+    height: 100%;
+    align-items: flex-end;
+}
+
+.ltm-button {
+    flex-shrink: 1;
+    height: auto;
+    width: 50%;
+    font-size: 19px;
+}
+
+.ltm-tier-label {
+    flex-grow: 1;
+    font-size: 18px;
+    color: rgb(0, 0, 0);
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.ltm-disclaimer {
+    -unity-font: url('project://database/Assets/Convai/Art/UI/Custom%20Fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf?fileID=12800000&guid=2313aff2442ff4bb08cbc22e96312f7d&type=3#SpaceGrotesk-Regular');
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    white-space: normal;
+}
+
+.ltm-tier-border {
+    flex-grow: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    height: 2px;
+    color: rgb(11, 96, 73);
+    flex-shrink: 0;
+}

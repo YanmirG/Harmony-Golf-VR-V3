@@ -1,0 +1,19 @@
+{
+    "samples": [
+        {
+            "displayName": "Action System",
+            "description": "Contains a sample scene where how to integrate Action System in your game is explained",
+            "path": "Samples~/Actions"
+        },
+        {
+            "displayName": "Narrative Design",
+            "description": "Contains a sample scene where how to integrate Narrative Design in your game is explained",
+            "path": "Samples~/Narrative Design"
+        },
+        {
+            "displayName": "NPC to NPC Conversation",
+            "description": "Contains a sample scene where how to integrate NPC to NPC Conversation in your game is explained",
+            "path": "Samples~/NPC to NPC Conversation"
+        }
+    ]
+}

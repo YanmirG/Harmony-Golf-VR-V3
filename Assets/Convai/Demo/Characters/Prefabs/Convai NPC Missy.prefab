@@ -1,0 +1,124 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6957835183570832137
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 623432826458601461, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: c25d0eaa9cc0b3e48bee6c7cbf937a67, type: 2}
+    - target: {fileID: 1474089814029031426, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: faceSkinnedMeshRenderer
+      value: 
+      objectReference: {fileID: 7057828458963964420}
+    - target: {fileID: 2116678390358549729, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: initializeSessionID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6286220254917385039, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: <FacialExpressionData>k__BackingField.Head.Renderer
+      value: 
+      objectReference: {fileID: 7057828458963964420}
+    - target: {fileID: 6286220254917385039, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: <FacialExpressionData>k__BackingField.Teeth.Renderer
+      value: 
+      objectReference: {fileID: 7537090866135022332}
+    - target: {fileID: 6286220254917385039, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: <FacialExpressionData>k__BackingField.Head.VisemeEffectorsList
+      value: 
+      objectReference: {fileID: 11400000, guid: 9e12866e2d2ba6e48ae0e948f2d19127,
+        type: 2}
+    - target: {fileID: 6286220254917385039, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: <FacialExpressionData>k__BackingField.Teeth.VisemeEffectorsList
+      value: 
+      objectReference: {fileID: 11400000, guid: 5bcdb817a21e9c348971f1b1a86bfdcc,
+        type: 2}
+    - target: {fileID: 6667240487094547286, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667240487094547286, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667240487094547286, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667240487094547286, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667240487094547286, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667240487094547286, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667240487094547286, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667240487094547286, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667240487094547286, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667240487094547286, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6667240487094547286, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6875522479810710320, guid: 1a26893db0184954090455d8ea9ff563,
+        type: 3}
+      propertyPath: m_Name
+      value: Convai NPC Missy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 1a26893db0184954090455d8ea9ff563, type: 3}
+--- !u!137 &7057828458963964420 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 107316367245760781, guid: 1a26893db0184954090455d8ea9ff563,
+    type: 3}
+  m_PrefabInstance: {fileID: 6957835183570832137}
+  m_PrefabAsset: {fileID: 0}
+--- !u!137 &7537090866135022332 stripped
+SkinnedMeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 582673034232852981, guid: 1a26893db0184954090455d8ea9ff563,
+    type: 3}
+  m_PrefabInstance: {fileID: 6957835183570832137}
+  m_PrefabAsset: {fileID: 0}

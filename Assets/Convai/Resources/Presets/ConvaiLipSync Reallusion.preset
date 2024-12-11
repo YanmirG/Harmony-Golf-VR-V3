@@ -1,0 +1,104 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!181963792 &2655988077585873504
+Preset:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: ConvaiLipSync Reallusion
+  m_TargetType:
+    m_NativeTypeID: 114
+    m_ManagedTypePPtr: {fileID: 11500000, guid: 88bce56f6985ef84f8835a0152628fa1,
+      type: 3}
+    m_ManagedTypeFallback: 
+  m_Properties:
+  - target: {fileID: 0}
+    propertyPath: m_Enabled
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorHideFlags
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: m_EditorClassIdentifier
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: faceModel
+    value: 3
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Head.Renderer
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Head.VisemeEffectorsList
+    value: 
+    objectReference: {fileID: 11400000, guid: 104e3def8c3c831468480415367bd43d, type: 2}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Head.WeightBounds.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Head.WeightBounds.y
+    value: 100
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Teeth.Renderer
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Teeth.VisemeEffectorsList
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Teeth.WeightBounds.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Teeth.WeightBounds.y
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Tongue.Renderer
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Tongue.VisemeEffectorsList
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Tongue.WeightBounds.x
+    value: 0
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.Tongue.WeightBounds.y
+    value: 1
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.JawBoneEffector
+    value: 
+    objectReference: {fileID: 11400000, guid: 085659d4e7314ce409d0327ff10ec295, type: 2}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.TongueBoneEffector
+    value: 
+    objectReference: {fileID: 11400000, guid: 4ec6606f21165c04ebd46cbf14447901, type: 2}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.JawBone
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <FacialExpressionData>k__BackingField.TongueBone
+    value: 
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: <WeightBlendingPower>k__BackingField
+    value: 0.5
+    objectReference: {fileID: 0}
+  - target: {fileID: 0}
+    propertyPath: characterEmotions.Array.size
+    value: 0
+    objectReference: {fileID: 0}
+  m_ExcludedProperties: []

@@ -1,0 +1,262 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <Style src="project://database/Assets/Convai/Art/UI/Editor/ConvaiSDKSetupWindow.uss?fileID=7433441132597879392&amp;guid=17990177950b0430996f7f695fe1c80d&amp;type=3#ConvaiSDKSetupWindow" />
+    <ui:VisualElement name="root" class="root" style="-unity-font: url(&apos;project://database/Assets/Convai/Art/UI/Custom%20Fonts/Space_Grotesk/static/SpaceGrotesk-SemiBold.ttf?fileID=12800000&amp;guid=6205a6911cd724fada8aa20e7f1afc6d&amp;type=3#SpaceGrotesk-SemiBold&apos;); -unity-font-definition: initial;">
+        <ui:VisualElement style="flex-direction: row; flex-grow: 1; -unity-font: url(&apos;project://database/Assets/Convai/Art/UI/Custom%20Fonts/Space_Grotesk/static/SpaceGrotesk-Regular.ttf?fileID=12800000&amp;guid=2313aff2442ff4bb08cbc22e96312f7d&amp;type=3#SpaceGrotesk-Regular&apos;);">
+            <ui:VisualElement class="sidebar">
+                <ui:VisualElement name="ConvaiLogo" class="mb-6">
+                    <ui:Image src="project://database/Assets/Convai/Art/UI/Logos/Convai%20Logo.png?fileID=2800000&amp;guid=b688e0950e2692e4187f9358cfb18984&amp;type=3#Convai Logo" style="width: auto; height: 85px; -unity-background-scale-mode: scale-to-fit; background-image: url(&apos;project://database/Assets/Convai/Art/UI/Logos/Convai%20Logo.png?fileID=2800000&amp;guid=b688e0950e2692e4187f9358cfb18984&amp;type=3#Convai Logo&apos;);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="SubMenu" style="padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-left: 6px; margin-right: 6px; margin-top: 6px; margin-bottom: 6px;">
+                    <ui:Button text="Welcome" name="welcome-btn" class="sidebar-link" />
+                    <ui:Button text="Account" name="account-btn" class="sidebar-link" />
+                    <ui:Button text="Package Management" name="package-management-btn" class="sidebar-link" />
+                    <ui:Button text="Character Importer" name="character-importer-btn" class="sidebar-link" />
+                    <ui:Button text="Logger Settings" name="logger-settings-btn" class="sidebar-link" />
+                    <ui:Button text="Updates" name="updates-btn" class="sidebar-link" />
+                    <ui:Button text="Documentation" name="documentation-btn" class="sidebar-link" />
+                    <ui:Button text="Contact Us" name="contact-us-btn" class="sidebar-link" style="display: flex;" />
+                    <ui:Button text="Long Term Memory" name="ltm-btn" class="sidebar-link" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:ScrollView name="content-container" class="container" style="border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-background-scale-mode: flex-start;">
+                <ui:VisualElement name="welcome" class="section-card" style="display: none; flex-wrap: nowrap; align-items: flex-start; justify-content: space-between; align-self: auto;">
+                    <ui:Label text="Welcome to Convai SDK" name="welcome-to-convai-sdk" class="header" />
+                    <ui:Label text="About Convai" name="about-convai" class="subheader" style="color: rgb(9, 97, 72); -unity-font-style: flex-start;" />
+                    <ui:Label text="Convai enables AI characters in games and virtual worlds to have human-like conversation capabilities and more. &lt;br &lt;br With Convai, developers and designers like you can add a backstory, knowledge base, voice, and overall intelligence to your characters to converse naturally with players and carry out actions.                        &lt;br Convai focuses on bringing characters that are as life-like as possible and can be directed by any developer! &lt;br &lt;br This SDK contains the complete Convai conversation pipeline, which includes Speech Recognition, Language Understanding and Generation, Text-to-Speech, Text-to-Action, Character Lipsync, Action capability, Narrative Design and much more. " name="about-convai-details" class="mb-4 text-base" style="align-items: auto; white-space: normal;" />
+                    <ui:VisualElement name="quick-start-guide-content" style="flex-wrap: nowrap; align-items: flex-start; justify-content: flex-start; align-self: stretch;">
+                        <ui:Label text="Quick Start Guide" name="quick-start-guide-label" class="subheader" style="color: rgb(9, 97, 72);" />
+                        <ui:Label text="Now that you have downloaded the SDK, lets get to know it quickly first&#10;" class="mb-2 text-base" style="-unity-font-style: bold; white-space: normal; flex-wrap: wrap; align-items: auto;" />
+                        <ui:Label text="1. Read the friendly documentation first to get an in-depth overview of the Convai SDK.  &lt;br 2. Go to the &apos;Account&apos; tab and initialize the SDK with your API key.  &lt;br 3. Go to the &apos;Package Management&apos; tab and to add extra features into the Convai package." name="quick-start-guide-points" class="text-base mb-4" style="white-space: normal; height: 52px; -unity-text-align: upper-left; align-items: stretch; justify-content: space-between; align-self: flex-start; width: 535px;" />
+                        <ui:VisualElement style="flex-direction: row; justify-content: space-between;">
+                            <ui:Button text="The Friendly Documentation" name="documentation-page" class="button-small" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="account" class="section-card" style="display: none;">
+                    <ui:Label text="Account Settings" class="header" />
+                    <ui:VisualElement class="card mb-4" style="align-self: stretch;">
+                        <ui:Label text="API Key Configuration" class="subheader" style="align-items: stretch;" />
+                        <ui:VisualElement class="form-group" style="align-self: auto;">
+                            <ui:Label text="API Key" class="label" />
+                            <ui:VisualElement style="flex-direction: row; align-items: auto; justify-content: space-between; align-self: auto; flex-wrap: nowrap; padding-left: 15px; padding-right: 15px;">
+                                <ui:TextField name="api-key" placeholder="Enter your API key" password="true" mask-character="●" class="input-field" style="justify-content: space-around; width: auto; height: auto; align-items: auto; align-self: auto; flex-wrap: nowrap; flex-shrink: 1; flex-grow: 1;" />
+                                <ui:Button name="toggle-password" text="Show" class="button-small" style="margin-left: 5px; align-self: center; padding-top: 10px; padding-left: 12px; padding-right: 12px; padding-bottom: 10px; margin-top: 0; margin-bottom: 0; display: flex; align-items: auto; -unity-font-style: normal; font-size: 15px; -unity-font: url(&apos;project://database/Assets/Convai/Art/UI/Custom%20Fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf?fileID=12800000&amp;guid=fcdbb1a85994047f9bec320e2362b1ed&amp;type=3#SpaceGrotesk-Bold&apos;);" />
+                            </ui:VisualElement>
+                            <ui:Label text="Enter your Convai API key to authenticate your requests." class="helper-text" />
+                        </ui:VisualElement>
+                        <ui:Button text="Save API Key" name="save-api-key" class="button-small" style="align-items: center; align-self: center;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="BillingContainer" class="card mb-4" style="height: auto; width: auto; flex-direction: column; justify-content: center; align-items: stretch;">
+                        <ui:Label text="Account Information" class="subheader" style="text-overflow: clip; white-space: normal;" />
+                        <ui:VisualElement name="CardHeader" style="flex-direction: row; justify-content: space-between; margin-bottom: 10px;">
+                            <ui:Label text="Developer" name="plan-name" class="label" />
+                            <ui:Label text="valid till 01-01-2024" name="expiry-date" class="expiry-date" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="UsageContainer" class="usage-container">
+                            <ui:VisualElement name="DailyUsage" class="usage-item" style="padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px;">
+                                <ui:Label text="Daily Usage" class="usage-label" />
+                                <ui:ProgressBar value="0" highValue="100" name="DailyUsageBar" class="usage-bar" style="border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+                                <ui:Label text="0/0 interactions" name="daily-usage-label" class="usage-value" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="MonthlyUsage" class="usage-item" style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                                <ui:Label text="Monthly Usage" class="usage-label" />
+                                <ui:ProgressBar value="0" highValue="100" name="MonthlyUsageBar" class="usage-bar" style="border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0); border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0; background-image: none;" />
+                                <ui:Label text="0/0 interactions" name="monthly-usage-label" class="usage-value" />
+                            </ui:VisualElement>
+                            <ui:VisualElement name="ElevenLabsUsage" class="usage-item" style="padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px; display: none;">
+                                <ui:VisualElement style="flex-direction: row; align-items: center;">
+                                    <ui:Label text="ElevenLabs Usage (monthly)" class="usage-label" />
+                                </ui:VisualElement>
+                                <ui:ProgressBar value="2.38" highValue="100" name="ElevenLabsUsageBar" class="usage-bar" />
+                                <ui:Label text="10/420 interactions" class="usage-value" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="package-management" class="section-card" style="display: none;">
+                    <ui:Label text="Package Management" class="header" />
+                    <ui:VisualElement style="flex-direction: row; margin: 10px 0;">
+                        <ui:Button text="Install AR Package" name="install-ar-package" class="button-small" style="flex-grow: 1; width: 30%;" />
+                        <ui:Button text="Install VR Package" name="install-vr-package" class="button-small" style="flex-grow: 1; width: 30%;" />
+                        <ui:Button text="Install MR Package" name="install-mr-package" class="button-small" style="flex-grow: 1; width: 30%;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-direction: row; margin: 10px 0;">
+                        <ui:Button text="Install iOS Build Package" name="install-ios-build-package" class="button-small" style="flex-grow: 1; width: 30%;" />
+                        <ui:Button text="Install URP Converter" name="install-urp-converter" class="button-small" style="flex-grow: 1; width: 30%;" />
+                        <ui:Button text="Convai Custom TMP Package" name="convai-custom-tmp-package" class="button-small" style="flex-grow: 1; width: 30%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="character-importer" class="section-card" style="display: none; align-self: stretch; justify-content: space-between; align-items: stretch;">
+                    <ui:Label text="Character Importer" class="header" />
+                    <ui:VisualElement name="VisualElement" class="form-group" style="margin-bottom: 5px; margin-left: 5px; margin-right: 5px; margin-top: 5px;">
+                        <ui:Label text="Character ID" class="label" />
+                        <ui:TextField name="character-id" placeholder="Enter character ID" class="input-field" />
+                    </ui:VisualElement>
+                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-between; align-items: stretch; align-self: center; padding-left: 5px; padding-right: 5px; padding-top: 5px; padding-bottom: 5px;">
+                        <ui:Button text="Preview Character" name="preview-character" class="button-small" style="margin-left: 3px; margin-right: 100px; margin-top: 3px; margin-bottom: 3px;" />
+                        <ui:Button text="Import Character" name="import-character" class="button-small" />
+                    </ui:VisualElement>
+                    <ui:Button text="How do I create a character?" name="create-character-from-playground" class="button-small" />
+                    <ui:Label text="Character Preview" class="subheader" style="margin-top: 10px;" />
+                    <ui:VisualElement class="card" style="height: auto; align-items: stretch; justify-content: space-between; flex-direction: column; margin: 10px; padding: 15px; align-self: stretch; width: auto; background-color: rgba(0, 0, 0, 0.05); border-radius: 10px; border-width: 1px; border-color: rgba(0, 0, 0, 0.1); flex-wrap: wrap;">
+                        <ui:VisualElement style="flex-direction: row; margin-bottom: 10px;">
+                            <ui:VisualElement name="character-thumbnail" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); height: 200px; width: 200px; background-image: url(&apos;project://database/Assets/Convai/Demo/Mobile%20UI/UI_Icon_Jump.png?fileID=2800000&amp;guid=751aa1b6637101946b2fdbb7aa27d6ad&amp;type=3#UI_Icon_Jump&apos;); -unity-background-scale-mode: scale-to-fit; border-radius: 75px; overflow: hidden;" />
+                            <ui:VisualElement style="flex-grow: 1; padding-left: 15px; justify-content: center; flex-wrap: wrap;">
+                                <ui:Label tabindex="-1" text="Missy" display-tooltip-when-elided="true" name="character-name" class="mb-2" style="font-size: 24px; -unity-font-style: bold; margin-bottom: 5px; white-space: normal; flex-wrap: wrap;" />
+                                <ui:Label tabindex="-1" text="Character ID: c7bf19f4-8aae-11ee-9d82-42010a40000e" display-tooltip-when-elided="true" name="character-id" style="font-size: 14px; color: rgba(0, 0, 0, 0.6); margin-bottom: 5px; white-space: normal; flex-wrap: wrap;" />
+                                <ui:Label tabindex="-1" text="Language: en-US" display-tooltip-when-elided="true" name="character-language" style="font-size: 14px; color: rgba(0, 0, 0, 0.6); white-space: normal;" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:ScrollView name="content-container" class="container" style="border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-background-scale-mode: flex-start;">
+                            <ui:Label tabindex="-1" text="Backstory" display-tooltip-when-elided="true" class="mb-2" style="font-size: 18px; -unity-font-style: bold; margin-bottom: 6px; align-items: auto;" />
+                            <ui:Label tabindex="-1" text="Missy is a vibrant and passionate tour guide with an great enthusiasm for American history and culture. Born and raised in a small town on the outskirts of New York City, she grew up fascinated by the stories and legends of America&apos;s past. With a degree in American History from a prestigious university, Missy decided to turn her passion into her profession. She believes that every monument has a story to tell, and she has dedicated herself to sharing these stories with people from around the world...." display-tooltip-when-elided="true" name="character-backstory" style="font-size: 14px; white-space: normal; color: rgba(0, 0, 0, 0.8);" />
+                        </ui:ScrollView>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="features" class="section-card">
+                    <ui:Label text="Features" class="header" />
+                    <ui:Label text="NPC to NPC Communication" class="subheader" />
+                    <ui:VisualElement class="form-group">
+                        <ui:Label text="Session ID" class="label" />
+                        <ui:TextField name="session-id" placeholder="Enter session ID" class="input-field" />
+                    </ui:VisualElement>
+                    <ui:Button text="Initialize" name="initialize" class="button-small" />
+                    <ui:Label text="Other Features" class="subheader" />
+                    <ui:Label text="Configure various Convai-specific settings to enhance your application’s capabilities." class="mb-4" />
+                    <ui:VisualElement class="mb-4">
+                        <ui:Label text="• Multi-language support" class="bullet-link" />
+                        <ui:Label text="• Emotion detection" class="bullet-link" />
+                        <ui:Label text="• Custom action triggers" class="bullet-link" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="logger-settings" class="section-card" style="display: none;">
+                    <ui:Label text="Logger Settings" class="header" />
+                    <ui:VisualElement name="logger-table" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); margin-top: 0; margin-bottom: 10px;" />
+                    <ui:VisualElement name="VisualElement" style="flex-direction: row; justify-content: flex-start;">
+                        <ui:Button text="Select All" name="select-all" class="button-small" />
+                        <ui:Button text="Clear All" name="clear-all" class="button-small" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="updates" class="section-card mb-4" style="display: none;">
+                    <ui:Label text="Updates" class="header" />
+                    <ui:VisualElement class="version-info">
+                        <ui:Label text="Current SDK Version" class="subheader" />
+                        <ui:Label text="v3.0.1" name="current-version" class="version-number changelog-version" style="margin-bottom: 10px; padding-left: 10px; padding-right: 10px; padding-top: 0; padding-bottom: 10px; margin-left: 0; margin-right: 0; margin-top: 0;" />
+                    </ui:VisualElement>
+                    <ui:Label text="Changelog" class="subheader" />
+                    <ui:ScrollView name="content-container" class="container" style="border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-background-scale-mode: flex-start; padding-left: 10px; padding-right: 10px; padding-top: 10px; padding-bottom: 10px;">
+                        <ui:VisualElement class="changelog-entry">
+                            <ui:Label text="v3.0.1" name="Label" class="changelog-version" style="height: 16px;" />
+                            <ui:Label text="Released: Jun 21, 2024" class="changelog-date" />
+                            <ui:Label text="Bug Fixes:" class="changelog-section" />
+                            <ui:Label text="• Fix macOS TMP UGUI render issue in demo scene" class="changelog-item" />
+                            <ui:Label text="• Prefab missing animator" class="changelog-item" />
+                            <ui:Label text="• Updated ActiveNPC layer check logic" class="changelog-item" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="changelog-entry">
+                            <ui:Label text="v3.0.0" class="changelog-version" />
+                            <ui:Label text="New Features:" class="changelog-section" />
+                            <ui:Label text="• NPC2NPC System" class="changelog-item" />
+                            <ui:Label text="• Narrative Design" class="changelog-item" />
+                            <ui:Label text="• Folder Restructuring" class="changelog-item" />
+                            <ui:Label text="• Gender-Based Animator" class="changelog-item" />
+                            <ui:Label text="• Feedback System" class="changelog-item" />
+                            <ui:Label text="• Convai Custom Packages" class="changelog-item" />
+                            <ui:Label text="• Scene Perception" class="changelog-item" />
+                            <ui:Label text="Improvements:" class="changelog-section" />
+                            <ui:Label text="• Texture and Material Compression" class="changelog-item" />
+                            <ui:Label text="• UI Updates" class="changelog-item" />
+                            <ui:Label text="• System Improvements" class="changelog-item" />
+                            <ui:Label text="• Lipsync Overhaul" class="changelog-item" />
+                            <ui:Label text="• Input System" class="changelog-item" />
+                            <ui:Label text="Bug Fixes:" class="changelog-section" />
+                            <ui:Label text="• Transcript UI Bug Fixes" class="changelog-item" />
+                            <ui:Label text="• Microphone Permission" class="changelog-item" />
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                    <ui:VisualElement class="update-actions" style="flex-direction: row; justify-content: center; align-self: center; align-items: center;">
+                        <ui:Button text="View Full Changelog" name="view-full-changelog" class="button-small" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="update-status" class="update-status">
+                        <ui:Label name="update-message" class="status-message" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="documentation" class="section-card">
+                    <ui:Label text="Documentation" class="header" />
+                    <ui:ScrollView name="content-container" class="container" style="border-left-color: rgba(255, 255, 255, 0); border-right-color: rgba(255, 255, 255, 0); border-top-color: rgba(255, 255, 255, 0); border-bottom-color: rgba(255, 255, 255, 0); -unity-background-scale-mode: flex-start;">
+                        <ui:VisualElement class="mb-4">
+                            <ui:Label text="Getting Started" class="subheader" />
+                            <ui:Label text="• Setting Up the Unity Plugin" name="unity-plugin-setup" class="bullet-link" />
+                            <ui:Label text="• Quick Start Tutorial" name="quick-start-tutorial" class="bullet-link" />
+                            <ui:Label text="• Video Tutorials" name="video-tutorials" class="bullet-link" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="mb-4">
+                            <ui:Label text="Features" class="subheader" />
+                            <ui:Label text="• Narrative Design" name="narrative-design" class="bullet-link" />
+                            <ui:Label text="• Transcript UI System" name="transcript-system" class="bullet-link" />
+                            <ui:Label text="• Actions" name="actions" class="bullet-link" />
+                            <ui:Label text="• NPC to NPC Interaction" name="npc-interaction" class="bullet-link" />
+                            <ui:Label text="• Lip-Sync" name="facial-expressions" class="bullet-link" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="mb-4">
+                            <ui:Label text="Platform-Specific Builds" name="platform-specific-builds" class="subheader" />
+                            <ui:Label text="• MacOS" name="macos-build" class="bullet-link" />
+                            <ui:Label text="• iOS" name="ios-build" class="bullet-link" />
+                            <ui:Label text="• AR / VR" name="ar-vr-build" class="bullet-link" />
+                        </ui:VisualElement>
+                        <ui:VisualElement>
+                            <ui:Label text="Troubleshooting Guide" class="subheader" />
+                            <ui:Label text="• FAQ" name="faq" class="bullet-link" />
+                        </ui:VisualElement>
+                    </ui:ScrollView>
+                </ui:VisualElement>
+                <ui:VisualElement name="contact-us" class="section-card" style="display: none;">
+                    <ui:Label text="Contact Us" class="header" />
+                    <ui:VisualElement>
+                        <ui:Label text="• Discord" name="discord" class="bullet-link" />
+                        <ui:Label text="• Convai Support" name="convai-support" class="bullet-link" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="ltm" class="section-card" style="display: flex;">
+                    <ui:VisualElement name="header" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-between; align-items: center; align-self: stretch; margin-bottom: 6px; margin-top: 12px;">
+                        <ui:Label text="Long Term Memory" class="header" style="align-self: center;" />
+                        <ui:Button text="Refresh" display-tooltip-when-elided="true" name="refresh-btn" class="button-small" style="align-self: center; font-size: 18px;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="disclaimer" style="flex-grow: 1; background-color: rgb(232, 241, 239); border-left-color: rgba(0, 0, 0, 0.1); border-right-color: rgba(0, 0, 0, 0.1); border-top-color: rgba(0, 0, 0, 0.1); border-bottom-color: rgba(0, 0, 0, 0.1); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 8px; border-bottom-left-radius: 8px; border-top-right-radius: 8px; border-bottom-right-radius: 8px; padding-left: 12px; padding-right: 12px; padding-top: 12px; padding-bottom: 12px; margin-top: 12px; margin-bottom: 6px; align-self: flex-start; width: 100%;">
+                        <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; justify-content: space-between; margin-bottom: 0; align-self: auto; width: 100%;">
+                            <ui:Label tabindex="-1" text="Disclaimer" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/Convai/Art/UI/Custom%20Fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf?fileID=12800000&amp;guid=92c9d87a9b5f34c7bb62edfcf91b0a09&amp;type=3#SpaceGrotesk-Medium&apos;); color: rgb(0, 0, 0); font-size: 24px; -unity-text-align: middle-left; padding-left: 0; padding-right: 0; flex-shrink: 1; align-self: center;" />
+                            <ui:Button text="Hide" display-tooltip-when-elided="true" name="disclaimer-toggle-button" class="button-small" style="align-self: center; font-size: 14px; padding-left: 12px; padding-right: 12px; padding-top: 8px; padding-bottom: 8px;" />
+                        </ui:VisualElement>
+                        <ui:VisualElement name="disclaimer-content" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); display: none; visibility: hidden; margin-top: 8px;">
+                            <ui:Label tabindex="-1" text="The number of Speaker IDs that can be created per API key is limited and varies based on the subscription tier. To optimize your usage and avoid exceeding your limit, it is recommended to regularly delete any unused Speaker IDs." display-tooltip-when-elided="true" class="ltm-disclaimer" />
+                            <ui:Label tabindex="-1" text="Per-Tier Limit" display-tooltip-when-elided="true" style="-unity-font: url(&apos;project://database/Assets/Convai/Art/UI/Custom%20Fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf?fileID=12800000&amp;guid=92c9d87a9b5f34c7bb62edfcf91b0a09&amp;type=3#SpaceGrotesk-Medium&apos;); color: rgb(0, 0, 0); font-size: 20px; margin-bottom: 8px;" />
+                            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; -unity-text-outline-color: rgb(11, 96, 73); border-left-color: rgba(0, 0, 0, 0.1); border-right-color: rgba(0, 0, 0, 0.1); border-top-color: rgba(0, 0, 0, 0.1); border-bottom-color: rgba(0, 0, 0, 0.1); border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 4px; border-bottom-left-radius: 4px; border-top-right-radius: 4px; border-bottom-right-radius: 4px; flex-direction: row; align-self: center; width: 100%;">
+                                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; flex-shrink: 0; width: 49%;">
+                                    <ui:Label tabindex="-1" text="Tier" display-tooltip-when-elided="true" class="ltm-tier-label" style="-unity-font: url(&apos;project://database/Assets/Convai/Art/UI/Custom%20Fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf?fileID=12800000&amp;guid=fcdbb1a85994047f9bec320e2362b1ed&amp;type=3#SpaceGrotesk-Bold&apos;); font-size: 20px;" />
+                                    <ui:VisualElement class="ltm-tier-border" />
+                                    <ui:Label tabindex="-1" text="Free" display-tooltip-when-elided="true" class="ltm-tier-label" style="flex-grow: 1; -unity-text-align: middle-left;" />
+                                    <ui:VisualElement class="ltm-tier-border" />
+                                    <ui:Label tabindex="-1" text="Gamer / Indie / Professional" display-tooltip-when-elided="true" class="ltm-tier-label" style="flex-grow: 1; -unity-text-align: middle-left; white-space: normal;" />
+                                    <ui:VisualElement class="ltm-tier-border" />
+                                    <ui:Label tabindex="-1" text="Partner / Enterprise" display-tooltip-when-elided="true" class="ltm-tier-label" style="flex-grow: 1; -unity-text-align: middle-left;" />
+                                </ui:VisualElement>
+                                <ui:VisualElement class="ltm-tier-border" style="height: auto; width: 2px;" />
+                                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: column; -unity-text-align: upper-right; flex-shrink: 0; width: 49%; display: flex;">
+                                    <ui:Label tabindex="-1" text="Limit" display-tooltip-when-elided="true" class="ltm-tier-label" style="font-size: 20px; -unity-font: url(&apos;project://database/Assets/Convai/Art/UI/Custom%20Fonts/Space_Grotesk/static/SpaceGrotesk-Bold.ttf?fileID=12800000&amp;guid=fcdbb1a85994047f9bec320e2362b1ed&amp;type=3#SpaceGrotesk-Bold&apos;);" />
+                                    <ui:VisualElement class="ltm-tier-border" />
+                                    <ui:Label tabindex="-1" text="1" display-tooltip-when-elided="true" class="ltm-tier-label" style="flex-grow: 1; -unity-text-align: middle-right;" />
+                                    <ui:VisualElement class="ltm-tier-border" />
+                                    <ui:Label tabindex="-1" text="5" display-tooltip-when-elided="true" class="ltm-tier-label" style="flex-grow: 1; -unity-text-align: middle-right;" />
+                                    <ui:VisualElement class="ltm-tier-border" />
+                                    <ui:Label tabindex="-1" text="100 (Can be Customized)" display-tooltip-when-elided="true" class="ltm-tier-label" style="flex-grow: 1; -unity-text-align: middle-right;" />
+                                </ui:VisualElement>
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:Label tabindex="-1" text="No Speaker ID(s) Found" display-tooltip-when-elided="true" name="no-speaker-id-label" style="color: rgb(0, 0, 0); -unity-font: url(&apos;project://database/Assets/Convai/Art/UI/Custom%20Fonts/Space_Grotesk/static/SpaceGrotesk-Medium.ttf?fileID=12800000&amp;guid=92c9d87a9b5f34c7bb62edfcf91b0a09&amp;type=3#SpaceGrotesk-Medium&apos;); font-size: 24px; -unity-text-align: middle-left; display: flex; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0; margin-top: 12px; margin-bottom: 12px;" />
+                    <ui:VisualElement name="container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); margin-top: 12px; margin-bottom: 12px;" />
+                </ui:VisualElement>
+            </ui:ScrollView>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

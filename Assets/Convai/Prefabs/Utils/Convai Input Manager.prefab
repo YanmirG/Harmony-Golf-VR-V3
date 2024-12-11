@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5783642062505694466
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3298942066626623780}
+  - component: {fileID: 7717556402746858790}
+  m_Layer: 0
+  m_Name: Convai Input Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3298942066626623780
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5783642062505694466}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7717556402746858790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5783642062505694466}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a69a6bc2bf58e64883c79cf732d1bfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerMovementKeyAction:
+    m_Name: Player Movement Key
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: e53c746f-637e-45fd-8261-c5f4435e182e
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: WASD
+      m_Id: 4a6106af-60c8-4632-a52e-2361f230bc01
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Movement Key
+      m_Flags: 4
+    - m_Name: up
+      m_Id: f293da4c-df6a-42d7-9c5f-378819fc3966
+      m_Path: <Keyboard>/w
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Movement Key
+      m_Flags: 8
+    - m_Name: down
+      m_Id: ca559f53-7bff-4d7c-9824-f149f1dc830b
+      m_Path: <Keyboard>/s
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Movement Key
+      m_Flags: 8
+    - m_Name: left
+      m_Id: 8036c5c7-6b53-4b94-97b0-5721f3ff20a1
+      m_Path: <Keyboard>/a
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Movement Key
+      m_Flags: 8
+    - m_Name: right
+      m_Id: cc0db5ce-ef07-474c-972a-0369cfd6ae6e
+      m_Path: <Keyboard>/d
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Movement Key
+      m_Flags: 8
+    - m_Name: Arrow Keys
+      m_Id: 41388d41-76dc-41f3-a841-0b0c7b4086b2
+      m_Path: 2DVector
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Movement Key
+      m_Flags: 4
+    - m_Name: up
+      m_Id: 5c2e278e-8f57-477e-93ea-7777d0dc3c17
+      m_Path: <Keyboard>/upArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Movement Key
+      m_Flags: 8
+    - m_Name: down
+      m_Id: 795b791e-9107-44f1-961f-4baff57302b0
+      m_Path: <Keyboard>/downArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Movement Key
+      m_Flags: 8
+    - m_Name: left
+      m_Id: b8353632-7d6d-4837-bdce-3fb809a9431a
+      m_Path: <Keyboard>/leftArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Movement Key
+      m_Flags: 8
+    - m_Name: right
+      m_Id: 6965db76-21f9-4c23-a3fe-6e273f4ff62a
+      m_Path: <Keyboard>/rightArrow
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Movement Key
+      m_Flags: 8
+    m_Flags: 0
+  PlayerJumpKeyAction:
+    m_Name: Player Jump Key
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: a26f1aed-2f31-4a10-a133-c13f72ce7902
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 5c57d247-995c-4a76-9139-90a9e71eb38d
+      m_Path: <Keyboard>/space
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Jump Key
+      m_Flags: 0
+    m_Flags: 0
+  PlayerRunKeyAction:
+    m_Name: Player Run Key
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 3b210a56-5ee1-4128-ac4d-1a08ca726569
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: fad90e63-dfff-4b3d-a598-742279a41b97
+      m_Path: <Keyboard>/leftShift
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Player Run Key
+      m_Flags: 0
+    m_Flags: 0
+  CursorLockKeyAction:
+    m_Name: Cursor Lock Key
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 74552738-f39e-43ec-a6e7-e02e049cf0a9
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: f10d51a6-1c40-4e1e-9f30-72024d316798
+      m_Path: <Keyboard>/escape
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Cursor Lock Key
+      m_Flags: 0
+    m_Flags: 0
+  TextSendKeyAction:
+    m_Name: Text Send Key
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 1a46e824-e41d-4493-8e96-bb6da282dc59
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 77519610-aa15-4b83-86a5-8c5df902c271
+      m_Path: <Keyboard>/enter
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Text Send Key
+      m_Flags: 0
+    - m_Name: 
+      m_Id: d697fb56-6362-4c8d-a1fb-872f23227e8a
+      m_Path: <Keyboard>/numpadEnter
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Text Send Key
+      m_Flags: 0
+    m_Flags: 0
+  TalkKeyAction:
+    m_Name: Talk Key
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: c3b25b0c-2667-4366-96fd-7d6f24d647a4
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: aac6ab46-ce52-4497-b1fa-4c1bdf5ace5c
+      m_Path: <Keyboard>/t
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Talk Key
+      m_Flags: 0
+    m_Flags: 0
+  NpcToNpcInteractionAction:
+    m_Name: Npc To Npc Interaction
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: 20c52f1c-5cfd-4cba-bc08-9b35af9322a2
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings: []
+    m_Flags: 0
+  SettingsKeyAction:
+    m_Name: Settings Key
+    m_Type: 0
+    m_ExpectedControlType: 
+    m_Id: fdac321c-1b81-4446-8411-d18df0224253
+    m_Processors: 
+    m_Interactions: 
+    m_SingletonActionBindings:
+    - m_Name: 
+      m_Id: 6cbc32f2-70c5-489b-b8c5-f08ad4d66ffa
+      m_Path: <Keyboard>/f10
+      m_Interactions: 
+      m_Processors: 
+      m_Groups: 
+      m_Action: Settings Key
+      m_Flags: 0
+    m_Flags: 0
