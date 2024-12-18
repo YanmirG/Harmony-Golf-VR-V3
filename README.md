@@ -36,7 +36,7 @@ Assets/
 |-- Zombie/
 ```
 
-## PC YOU USE
+## PC I USE
 
 - **Intel Core i5 9400**
 - **Nvidia RTX 3050**
