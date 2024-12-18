@@ -5,6 +5,8 @@ It is a project that creates virtual reality for people over 50 years of age or 
 
 - **Unity Editor Versión 2022.3.48f1**
 - **Storage space 8GB**
+- **Texture Universal Render Pipeline**(In case the textures fail)
+- **Texture Universal Render Nature**(In case the textures fail)
 
 ## Assets used
 
