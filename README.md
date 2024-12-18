@@ -38,9 +38,9 @@ Assets/
 
 ## PC YOU USE
 
--**Intel Core i5 9400**
--**Nvidia RTX 3050**
--**RAM Memory 16 GB**
+- **Intel Core i5 9400**
+- **Nvidia RTX 3050**
+- **RAM Memory 16 GB**
 
 
 ## License
