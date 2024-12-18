@@ -3,11 +3,12 @@ It is a project that creates virtual reality for people over 50 years of age or 
 
 ## Requirements
 
-- Unity Editor Versión 2022.3.48f1
-- Storage space 8GB
+- **Unity Editor Versión 2022.3.48f1**
+- **Storage space 8GB**
 
 ## Assets used
 
+```plaintext
 Assets/
 |-- Audio/
 |-- BOKI/
@@ -33,7 +34,7 @@ Assets/
 |-- XR/
 |-- XRI/
 |-- Zombie/
-
+```
 
 ## PC YOU USE
 
